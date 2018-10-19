@@ -1,0 +1,25 @@
+.file, .folder {
+    background: transparent;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: contain;
+    height: calc(5vh + 1em + 3px);
+    width: 5vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    left: 200px;
+    top: 200px;
+}
+
+.file.github   { background-image: url('../res/gh.png');       }
+.file.twit     { background-image: url('../res/twit.png');     }
+.file.linkedin { background-image: url('../res/linkedin.png'); }
+.file.contact  { background-image: url('../res/contact.png');  }
+
+.file.iut      { background-image: url('../res/iut.png');      }
+.file.todo      { background-image: url('../res/orgmode.png'); }
+
+.folder        { background-image: url('../res/folder.png');   }

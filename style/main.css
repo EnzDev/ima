@@ -1,0 +1,28 @@
+#screen {
+    display: none;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: consolas;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#screen footer {
+    display: flex;
+    background: var(--l-black);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+#screen footer>div {
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+#screen>footer> :first-child,
+#screen>footer> :last-child {
+    margin: 0 1vw;
+}

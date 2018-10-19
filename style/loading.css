@@ -1,0 +1,34 @@
+#loading {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: consolas;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.dots {
+    color: var(--l-blue);
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vw;
+}
+
+.end::before {
+    content: "[ ";
+    color: var(--foreground);
+}
+
+.end::after {
+    content: " ]";
+    color: var(--foreground);
+}
+
+.end {
+    color: var(--d-green);
+}
+pre {
+    line-height: 1;
+}
