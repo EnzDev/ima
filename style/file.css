@@ -1,10 +1,11 @@
-.file, .folder {
+.file,
+.folder {
     background: transparent;
     background-position-x: center;
     background-position-y: top;
     background-size: contain;
-    height: calc(5vh + 1em + 3px);
-    width: 5vh;
+    height: calc(7vh + 1em + 3px);
+    width: 7vh;
     background-repeat: no-repeat;
     position: absolute;
     display: flex;
@@ -14,12 +15,27 @@
     top: 200px;
 }
 
-.file.github   { background-image: url('../res/gh.png');       }
-.file.twit     { background-image: url('../res/twit.png');     }
+.content>.file, .content>.folder {
+    position: relative;
+    margin: 2px 1vw;
+}
+
+.file.github { background-image: url('../res/gh.png'); }
+
+.file.twit { background-image: url('../res/twit.png'); }
+
 .file.linkedin { background-image: url('../res/linkedin.png'); }
-.file.contact  { background-image: url('../res/contact.png');  }
 
-.file.iut      { background-image: url('../res/iut.png');      }
-.file.todo      { background-image: url('../res/orgmode.png'); }
+.file.contact { background-image: url('../res/contact.png'); }
 
-.folder        { background-image: url('../res/folder.png');   }
+.file.epsi { background-image: url('../res/epsi.png'); }
+
+.file.iut { background-image: url('../res/iut.png'); }
+
+.file.todo { background-image: url('../res/orgmode.png'); }
+
+.folder.technos { background-image: url('../res/f_techs.png'); }
+
+.folder.project { background-image: url('../res/f_project.png'); }
+
+.folder.music { background-image: url('../res/f_music.png'); }

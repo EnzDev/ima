@@ -12,11 +12,6 @@ function rand(x, y) {
     return Math.floor(Math.random() * Math.floor(x)) + y;
 }
 
-// $(()=>{
-//     $("#loading").hide(100)
-//     $("#screen").show(100)
-// })
-
 go = function () {
     $("#loading").hide(100)
     $("#screen").show(100)
@@ -27,6 +22,9 @@ $(async () => {
     sockets = ["network"];
     mount = ["knowledge", "skills"];
 
+    await waitNMils(rand(600, 200));
+    $("#loading .icon").animate({ opacity: 1 }, 350);
+    await waitNMils(1, 400)
     for (var s of services) {
         await waitNMils(rand());
         $("#loading").append(`<div class="line"><span><span class="dots">::</span> Loading ${s}.service</span></div>`);
@@ -53,7 +51,7 @@ $(async () => {
 
     $("#loading").append(`<div class="line">&nbsp</div>`);
     $("#loading").append(`<div class="line"><span>Ready to start EnzOs v1.2...</span></div>`);
-    await waitNMils(rand(3000, 1000));
+    await waitNMils(rand(3000, 3000));
     $("#loading").append(`<div class="line">Go !</div>`);
     await waitNMils(rand(100, 100));
 
